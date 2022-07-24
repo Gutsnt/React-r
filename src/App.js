@@ -1,22 +1,22 @@
-import Button from './Button.js'
+import { Component } from "react";
+import logo from './logo.svg';
+import './App.css';
 
-const arr = [
-    'chanchito feliz',
-    'chanchito triste',
-    'chanchito emocionado'
-]
-const App = () => {
-    const miVariable = false
-
-    if (miVariable) {
-        return <p>Mi variable dio true</p>
-    }
-    return (
-        <div>
-            <h1>Hola mundo</h1>
-            {arr.map(el => <p key={el}>{el.propiedad}</p>)}
-            <Button onClick={() => console.log('clickeado')}>Enviar</Button>
-        </div>
+class App extends Component {
+  state = {
+    productos: [
+      {name: 'Tomate', price:1500, img:'/productos/tomate.jpg'},
+      {name: 'Arbejas', price:2000, img:'/productos/arbejas.jpg'},
+      {name: 'Lechuga', price:500, img:'/productos/lechuga.jpg'},
+    ]
+  }
+  render(){
+    return(
+      <div>
+        <p>Hola</p>
+      </div>
     )
+  }
 }
-export default App
+
+export default App;

@@ -1,7 +1,5 @@
 import { Component } from "react";
-import logo from './logo.svg';
-import './App.css';
-
+import Productos from './components/Productos'
 class App extends Component {
   state = {
     productos: [
@@ -13,7 +11,11 @@ class App extends Component {
   render(){
     return(
       <div>
-        <p>Hola</p>
+        <Productos
+          agregarAlCarro={() => console.log('No hace nada')}
+          productos={this.state.productos}
+        />
+        <p></p>
       </div>
     )
   }

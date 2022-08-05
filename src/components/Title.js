@@ -1,7 +1,7 @@
 import { Component } from "react";
 
-const styles:{
-	title: {
+const styles = {
+	title:{
 		marginBottom:'30px'
 	}
 }

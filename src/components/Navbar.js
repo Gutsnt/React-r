@@ -1,5 +1,6 @@
 import { Component } from "react";
-
+import Logo from './Logo'
+import Carro from './Carro' 
 const styles = {
 	navbar: {
 		display:'flex',
@@ -14,10 +15,11 @@ const styles = {
 }
 class Navbar extends Component {
 	render() {
+		const { carro } =this.props
 		return(
 			<nav style={styles.navbar}>
-			<p>Logos hola</p>
-			<p>Carro</p>
+				<Logo />
+				<Carro carro={carro} />
 			</nav>
 		)
 	}

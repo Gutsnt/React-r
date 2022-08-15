@@ -9,7 +9,7 @@ class Logo extends Component {
 	render() {
 		return(
 			<div style={styles.logo}>
-				Shop
+				<h1>Shop</h1>
 			</div>
 		)
 	}
